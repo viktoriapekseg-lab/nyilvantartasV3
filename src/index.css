@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{color-scheme:light}
+.card{border:1px solid #e5e7eb;border-radius:16px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.card-header{padding:16px;border-bottom:1px solid #e5e7eb}
+.card-title{font-weight:600}
+.card-content{padding:16px}
+.btn{display:inline-flex;gap:8px;align-items:center;border:1px solid #d1d5db;background:#fff;border-radius:10px;padding:10px 14px;cursor:pointer;transition:background .15s,color .15s,border-color .15s,filter .15s}
+.btn:hover{background:#000;color:#fff;border-color:#000}
+.btn-secondary{background:#f3f4f6}
+.btn-secondary:hover{background:#000;color:#fff;border-color:#000}
+.btn-danger{background:#dc2626;color:#fff;border-color:#b91c1c}
+.btn-danger:hover{filter:brightness(0.9)}
+.input,.select,textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:10px}
+.label{font-size:12px;font-weight:600;margin-bottom:4px;display:block}
+.table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 10px;border-bottom:1px solid #eee;text-align:left}
+.dialog-overlay{position:fixed;inset:0;background:rgba(0,0,0,.3)}
+.dialog-content{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.2);width:min(92vw,560px);padding:16px}
+input, select, textarea, button { font-size: 16px; }
+
+/* Existing special buttons */
+.btn-invert{ background:#000; color:#fff; border-color:#000 }
+.btn-invert:hover{ filter:brightness(0.9) }
+.btn-tiffany{ background:#81D8D0; border-color:#81D8D0 }
+.btn-tiffany:hover{ filter:brightness(0.95) }
+
+/* Mobile-friendly horizontal carousel behavior for tab header */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.snap-x { scroll-snap-type: x mandatory; }
+.snap-center { scroll-snap-align: center; }
+.shrink-0 { flex-shrink: 0; }
