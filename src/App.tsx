@@ -156,7 +156,6 @@ function Tabs({tabs, render}:{tabs:{key:string,label:string}[]; render:(k:string
   </div>;
 }
 
-}
 
 function MovementEntry({ user, partners, crateTypes, onAdd }:{ user: User; partners: Partner[]; crateTypes: CrateType[]; onAdd: (row: Omit<Movement,'id'|'created_at'>)=> void | Promise<void>; }){
   const activeCrateTypes = useMemo(()=> crateTypes.filter(c=> !c.archived), [crateTypes]);
